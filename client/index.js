@@ -7,7 +7,7 @@ const serverUrl = 'http://localhost:1225';
 
 const getProof = (name) => {
   const merkleTree = new MerkleTree(niceList);
-  const index = niceList.findIndex((n) => n === name);
+  const index = niceList.findIndex(n => n === name);
 
   return merkleTree.getProof(index);
 };
